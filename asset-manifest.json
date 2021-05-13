@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/nomadflix/static/js/main.74810718.chunk.js",
+    "main.js.map": "/nomadflix/static/js/main.74810718.chunk.js.map",
+    "runtime-main.js": "/nomadflix/static/js/runtime-main.523b987f.js",
+    "runtime-main.js.map": "/nomadflix/static/js/runtime-main.523b987f.js.map",
+    "static/js/2.ff464e9c.chunk.js": "/nomadflix/static/js/2.ff464e9c.chunk.js",
+    "static/js/2.ff464e9c.chunk.js.map": "/nomadflix/static/js/2.ff464e9c.chunk.js.map",
+    "index.html": "/nomadflix/index.html",
+    "static/js/2.ff464e9c.chunk.js.LICENSE.txt": "/nomadflix/static/js/2.ff464e9c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.523b987f.js",
+    "static/js/2.ff464e9c.chunk.js",
+    "static/js/main.74810718.chunk.js"
+  ]
+}
