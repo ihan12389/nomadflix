@@ -11,10 +11,10 @@ const Text = styled.span`
   color: ${(props) => props.color};
 `;
 
-const Message = ({ text, color }) => {
+const Message = ({ text, color }) => (
   <Container>
     <Text color={color}>{text}</Text>
-  </Container>;
-};
+  </Container>
+);
 
 export default Message;

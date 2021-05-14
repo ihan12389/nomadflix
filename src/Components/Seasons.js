@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { tvApi } from "../api";
 import PropTypes from "prop-types";
+import {Link} from "react-router-dom";
 
 const Seasson = styled.div`
   display: flex;
@@ -59,14 +60,16 @@ const Overview = styled.p`
   transition-timing-function: ease-in-out;
 `;
 
-const SeasonInfo = ({ name, path, overview, ids }) => (
-  <li>
+const SeasonInfo = ({ name, path, overview, id }) => {
+  return (<li>
+    <Link to ={`/turn/${id}`}>
     <Container path={path ? `https://image.tmdb.org/t/p/w300${path}` : require("../assets/noPosterSmall.jpg")}>
       <Title>{name}</Title>
       <Overview>{overview}</Overview>
     </Container>
-  </li>
-);
+    </Link>
+  </li>)
+};
 
 const Seasons = ({ match }) => {
   const [seasons, setSeasons] = useState(null);
@@ -89,7 +92,7 @@ const Seasons = ({ match }) => {
       <Seasson>
         {seasons &&
           seasons.map(item => (
-            <SeasonInfo name={item.name} path={item.poster_path} overview={item.overview} ids={item.id} />
+            <SeasonInfo name={item.name} path={item.poster_path} overview={item.overview} id={item.id} />
           ))}
       </Seasson>
     </div>
